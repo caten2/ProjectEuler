@@ -1,7 +1,7 @@
 """
 Project Euler problem 1
 
-Solution by Charlotte Aten (caten2@u.rochester.edu) 2015
+Solution by Charlotte Aten (caten2@u.rochester.edu) 2016
 
 Problem statement:
     If we list all the natural numbers below 10 that are multiples of 3 or 5, we get 3, 5, 6 and 9.
@@ -34,9 +34,9 @@ class MultiplesUpTo():
     def __repr__(self):
         """
         Examples:
-            >>> M = MultiplesUpTo([3,5],10); M
+            >>> m = MultiplesUpTo([3,5],10); m
             'Multiples of 3 and 5 strictly less than 10.'
-            >>> N = MultiplesUpTo([3,5,7,5,3,7],50); N
+            >>> n = MultiplesUpTo([3,5,7,5,3,7],50); n
             'Multiples of 3, 5, and 7 strictly less than 50.'
         """
 
@@ -84,27 +84,27 @@ class MultiplesUpTo():
 
         return sum(self.elements())
 
-print("Create an object for the multiples of 3 and 5 below 10 and have it give its name.")
-M = MultiplesUpTo([3,5],10)
-print(M)
-print("")
+print('Create an object for the multiples of 3 and 5 below 10 and have it give its name.')
+m = MultiplesUpTo([3,5],10)
+print(m)
+print('')
 
-print("List all of the multiples of 3 and 5 below 10.")
-print(M.list_elements())
-print("")
+print('List all of the multiples of 3 and 5 below 10.')
+print(m.list_elements())
+print('')
 
-print("Give the sum of those values.")
-print(M.total())
-print("")
+print('Give the sum of those values.')
+print(m.total())
+print('')
 
-print("Create an object for the multiples of 3 and 5 below 1000 and have it give its name.")
-N = MultiplesUpTo([3,5],1000)
-print(N)
-print("")
+print('Create an object for the multiples of 3 and 5 below 1000 and have it give its name.')
+n = MultiplesUpTo([3,5],1000)
+print(n)
+print('')
 
-print("List all of the multiples of 3 and 5 below 1000.")
-print(N.list_elements())
-print("")
+print('List all of the multiples of 3 and 5 below 1000.')
+print(n.list_elements())
+print('')
 
-print("Give the sum of those values.")
-print(N.total())
+print('Give the sum of those values.')
+print(n.total())
