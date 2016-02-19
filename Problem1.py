@@ -60,7 +60,7 @@ class MultiplesUpTo():
 
         for i in range(1,self.maximum):
             for n in self.multiples_of:
-                # Check whether i is a multiple of n by noting that n divides i iff i is congruent to 0 modulo n.
+                # Check whether `i` is a multiple of `n` by noting that n divides `i` iff `i` is congruent to 0 modulo `n`.
                 if i % n == 0:
                     yield i
 
