@@ -41,7 +41,7 @@ class PrimeFactors():
             int: The next factor of `integer`.
         """
 
-        for n in xrange(2,self.integer//2):
+        for n in range(2,self.integer//2):
             if self.integer%n == 0:
                 yield n
         yield self.integer
@@ -49,7 +49,7 @@ class PrimeFactors():
     def prime_factors(self):
         """
         Generate those positive integers which are prime factors of `integer`.
-        
+
         Yields:
             int: The next prime factor of `integer`.
         """
@@ -63,24 +63,24 @@ class PrimeFactors():
 print('Create an object for the prime factorization of 13195 and have it give its name.')
 f = PrimeFactors(13195)
 print(f)
-print('')
+print()
 
 print('List the prime factors of 13195.')
 print(f.prime_factors)
-print('')
+print()
 
 print('Give the largest prime factor of 13195.')
 print(f.largest_prime_factor)
-print('')
+print()
 
 print('Create an object for the prime factorization of 600851475143 and have it give its name.')
 g = PrimeFactors(600851475143)
 print(g)
-print('')
+print()
 
 print('List the prime factors of 600851475143.')
 print(g.prime_factors)
-print('')
+print()
 
 print('Give the largest prime factor of 600851475143.')
 print(g.largest_prime_factor)

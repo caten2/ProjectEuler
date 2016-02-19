@@ -87,24 +87,24 @@ class MultiplesUpTo():
 print('Create an object for the multiples of 3 and 5 below 10 and have it give its name.')
 m = MultiplesUpTo([3,5],10)
 print(m)
-print('')
+print()
 
 print('List all of the multiples of 3 and 5 below 10.')
 print(m.list_elements())
-print('')
+print()
 
 print('Give the sum of those values.')
 print(m.total())
-print('')
+print()
 
 print('Create an object for the multiples of 3 and 5 below 1000 and have it give its name.')
 n = MultiplesUpTo([3,5],1000)
 print(n)
-print('')
+print()
 
 print('List all of the multiples of 3 and 5 below 1000.')
 print(n.list_elements())
-print('')
+print()
 
 print('Give the sum of those values.')
 print(n.total())

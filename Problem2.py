@@ -37,7 +37,7 @@ class Fibonacci():
     def first_n_terms(self, number):
         """
         Generate a specified number of terms of the Fibonacci sequence.
-        
+
         Args:
             number (int): The desired number of terms.
 
@@ -48,16 +48,16 @@ class Fibonacci():
         count = 0
         s = self.sequence()
         while count < number:
-            yield s.next()
+            yield s.__next__()
             count += 1
 
     def list_first_n_terms(self, number):
         """
         Return a list of the several terms yielded by the ``first_n_terms`` generator.
-        
+
         Args:
             number (int): The number of terms of the sequence to list.
-        
+
         Returns:
             list: A list of the first `number` terms in the sequence in the order in which they are yielded by ``first_n_terms``.
         """
@@ -76,10 +76,10 @@ class Fibonacci():
         """
 
         s = self.sequence()
-        i = s.next()
+        i = s.__next__()
         while i < maximum:
             yield i
-            i = s.next()
+            i = s.__next__()
 
     def list_sequence_up_to(self, maximum):
         """
@@ -118,15 +118,15 @@ class Fibonacci():
 print('Create an object for the Fibonacci sequence and have it give its name.')
 f = Fibonacci()
 print(f)
-print('')
+print()
 
 print('List the first 10 terms of the Fibonacci sequence.')
 print(f.list_first_n_terms(10))
-print('')
+print()
 
 print('List the sum of even terms up to 100.')
 print(f.sum_evens_up_to(100))
-print('')
+print()
 
 print('List the sum of even terms up to 4 million.')
 print(f.sum_evens_up_to(4000000))
