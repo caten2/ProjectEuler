@@ -8,7 +8,7 @@ Problem statement:
     What is the largest prime factor of the number 600851475143?
 """
 
-class PrimeFactors():
+class PrimeFactors:
     """
     The collection of natural prime factors of a specified integer.
 

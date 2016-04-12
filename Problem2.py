@@ -11,7 +11,7 @@ Problem statement:
     find the sum of the even-valued terms.
 """
 
-class Fibonacci():
+class Fibonacci:
     """
     The infinite sequence beginning with 1,2 where each subsequent term is obtained by
     adding the previous two terms in the sequence.

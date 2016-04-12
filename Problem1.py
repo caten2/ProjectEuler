@@ -9,7 +9,7 @@ Problem statement:
     Find the sum of all the multiples of 3 or 5 below 1000.
 """
 
-class MultiplesUpTo():
+class MultiplesUpTo:
     """
     A collection of multiples of some natural numbers.
 
@@ -67,7 +67,7 @@ class MultiplesUpTo():
     def list_elements(self):
         """
         List all the numbers yielded by the generator ``elements``.
-        
+
         Returns:
             list: All numbers yielded by ``elements`` in numerical order.
         """
@@ -77,7 +77,7 @@ class MultiplesUpTo():
     def total(self):
         """
         Sum all numbers yielded by ``elements``.
-        
+
         Returns:
             int: The sum of all natural multiples of elements of `multiples_of` less than `maximum`.
         """
